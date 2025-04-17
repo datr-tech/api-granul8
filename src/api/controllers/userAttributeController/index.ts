@@ -1,0 +1,1 @@
+export { userAttributeController } from './userAttributeController';

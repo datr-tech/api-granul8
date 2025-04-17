@@ -1,0 +1,1 @@
+export { attributeTypeRouter } from './attributeTypeRouter';
