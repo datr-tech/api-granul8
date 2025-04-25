@@ -1,5 +1,5 @@
 import { model, Schema } from 'mongoose';
-import { attributeModelSchema, attributeModelSchemaOptions } from '@freight/granul8-model-schemas';
+import { attributeModelSchema, attributeModelSchemaOptions } from '@datr.tech/parcel-model-schemas-granul8';
 import { modelValidatorAttributeTypeId, modelValidatorAdminStatusId, modelValidatorAdminUserId } from '@app/api/modelValidators';
 
 const attributeSchema = new Schema(attributeModelSchema, attributeModelSchemaOptions);

@@ -1,7 +1,7 @@
 import { Request, Response, Router } from 'express';
 import { checkExact, checkSchema, matchedData, Schema, validationResult } from 'express-validator';
-import { options } from '@freight/common-router-options';
-import { attributeValidationSchemaUpdateAttribute } from '@freight/granul8-router-validation-schemas';
+import { options } from '@datr.tech/leith-config-api-router-options';
+import { attributeValidationSchemaUpdateAttribute } from '@datr.tech/cargo-router-validation-schemas-granul8';
 import { attributeController } from '@app/api/controllers/attributeController';
 
 export const attributeRouterUpdateAttribute = Router(options).patch(

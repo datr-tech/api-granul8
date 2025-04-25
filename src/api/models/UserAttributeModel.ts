@@ -1,5 +1,5 @@
 import { model, Schema } from 'mongoose';
-import { userAttributeModelSchema, userAttributeModelSchemaOptions } from '@freight/granul8-model-schemas';
+import { userAttributeModelSchema, userAttributeModelSchemaOptions } from '@datr.tech/parcel-model-schemas-granul8';
 import {
   modelValidatorAttributeId,
   modelValidatorUserId,

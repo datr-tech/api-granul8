@@ -1,7 +1,7 @@
 import { Request, Response, Router } from 'express';
 import { checkExact, checkSchema, matchedData, Schema, validationResult } from 'express-validator';
-import { options } from '@freight/common-router-options';
-import { resourceAttributeValidationSchemaCreateResourceAttribute } from '@freight/granul8-router-validation-schemas';
+import { options } from '@datr.tech/leith-config-api-router-options';
+import { resourceAttributeValidationSchemaCreateResourceAttribute } from '@datr.tech/cargo-router-validation-schemas-granul8';
 import { resourceAttributeController } from '@app/api/controllers/resourceAttributeController';
 import { IResourceAttributeModel } from '@app/interfaces/api/models/IResourceAttributeModel';
 

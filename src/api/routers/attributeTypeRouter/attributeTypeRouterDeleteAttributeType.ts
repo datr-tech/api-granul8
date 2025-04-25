@@ -1,7 +1,7 @@
 import { Request, Response, Router } from 'express';
 import { checkExact, checkSchema, matchedData, Schema, validationResult } from 'express-validator';
-import { options } from '@freight/common-router-options';
-import { attributeTypeValidationSchemaDeleteAttributeType } from '@freight/granul8-router-validation-schemas';
+import { options } from '@datr.tech/leith-config-api-router-options';
+import { attributeTypeValidationSchemaDeleteAttributeType } from '@datr.tech/cargo-router-validation-schemas-granul8';
 import { attributeTypeController } from '@app/api/controllers/attributeTypeController';
 
 export const attributeTypeRouterDeleteAttributeType = Router(options).get(
