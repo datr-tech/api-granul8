@@ -1,6 +1,9 @@
-import { ResourceAttributeModel } from '@app/api/models';
+import { ResourceAttributeModel } from '@app-ag/api/models';
 
-export const resourceAttributeControllerUpdateResourceAttribute = async ({ resourceAttributeId, payload }) => {
+export const resourceAttributeControllerUpdateResourceAttribute = async ({
+  resourceAttributeId,
+  payload,
+}) => {
   const res = await ResourceAttributeModel.findOneAndUpdate(
     {
       _id: resourceAttributeId,

@@ -1,7 +1,7 @@
 import { resourceAttributeControllerCreateResourceAttribute } from './resourceAttributeControllerCreateResourceAttribute';
-import { resourceAttributeControllerUpdateResourceAttribute } from './resourceAttributeControllerUpdateResourceAttribute';
-import { resourceAttributeControllerReadResourceAttribute } from './resourceAttributeControllerReadResourceAttribute';
 import { resourceAttributeControllerDeleteResourceAttribute } from './resourceAttributeControllerDeleteResourceAttribute';
+import { resourceAttributeControllerReadResourceAttribute } from './resourceAttributeControllerReadResourceAttribute';
+import { resourceAttributeControllerUpdateResourceAttribute } from './resourceAttributeControllerUpdateResourceAttribute';
 
 export const resourceAttributeController = {
   createResourceAttribute: resourceAttributeControllerCreateResourceAttribute,

@@ -1,7 +1,7 @@
 import { attributeControllerCreateAttribute } from './attributeControllerCreateAttribute';
-import { attributeControllerUpdateAttribute } from './attributeControllerUpdateAttribute';
-import { attributeControllerReadAttribute } from './attributeControllerReadAttribute';
 import { attributeControllerDeleteAttribute } from './attributeControllerDeleteAttribute';
+import { attributeControllerReadAttribute } from './attributeControllerReadAttribute';
+import { attributeControllerUpdateAttribute } from './attributeControllerUpdateAttribute';
 
 export const attributeController = {
   createAttribute: attributeControllerCreateAttribute,

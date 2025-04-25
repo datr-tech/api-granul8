@@ -1,7 +1,7 @@
 import { attributeTypeControllerCreateAttributeType } from './attributeTypeControllerCreateAttributeType';
-import { attributeTypeControllerUpdateAttributeType } from './attributeTypeControllerUpdateAttributeType';
-import { attributeTypeControllerReadAttributeType } from './attributeTypeControllerReadAttributeType';
 import { attributeTypeControllerDeleteAttributeType } from './attributeTypeControllerDeleteAttributeType';
+import { attributeTypeControllerReadAttributeType } from './attributeTypeControllerReadAttributeType';
+import { attributeTypeControllerUpdateAttributeType } from './attributeTypeControllerUpdateAttributeType';
 
 export const attributeTypeController = {
   createAttributeType: attributeTypeControllerCreateAttributeType,

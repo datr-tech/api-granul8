@@ -1,5 +1,5 @@
+import { ResourceAttributeModel } from '@app-ag/api/models';
 import { Types } from 'mongoose';
-import { ResourceAttributeModel } from '@app/api/models';
 
 export const resourceAttributeControllerCreateResourceAttribute = async ({
   attributeId,

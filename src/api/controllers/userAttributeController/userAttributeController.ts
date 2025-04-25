@@ -1,7 +1,7 @@
 import { userAttributeControllerCreateUserAttribute } from './userAttributeControllerCreateUserAttribute';
-import { userAttributeControllerUpdateUserAttribute } from './userAttributeControllerUpdateUserAttribute';
-import { userAttributeControllerReadUserAttribute } from './userAttributeControllerReadUserAttribute';
 import { userAttributeControllerDeleteUserAttribute } from './userAttributeControllerDeleteUserAttribute';
+import { userAttributeControllerReadUserAttribute } from './userAttributeControllerReadUserAttribute';
+import { userAttributeControllerUpdateUserAttribute } from './userAttributeControllerUpdateUserAttribute';
 
 export const userAttributeController = {
   createUserAttribute: userAttributeControllerCreateUserAttribute,

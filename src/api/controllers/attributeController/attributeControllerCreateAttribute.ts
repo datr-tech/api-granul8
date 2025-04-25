@@ -1,7 +1,13 @@
+import { AttributeModel } from '@app-ag/api/models';
 import { Types } from 'mongoose';
-import { AttributeModel } from '@app/api/models';
 
-export const attributeControllerCreateAttribute = async ({ attributeTypeId, description, name, adminStatusId, adminUserId }) => {
+export const attributeControllerCreateAttribute = async ({
+  attributeTypeId,
+  description,
+  name,
+  adminStatusId,
+  adminUserId,
+}) => {
   const attributeId = new Types.ObjectId();
   const modelParams = {
     attributeId,

@@ -1,5 +1,5 @@
-import { Router } from 'express';
 import { options } from '@datr.tech/leith-config-api-router-options';
+import { Router } from 'express';
 import { userAttributeRouterCreateUserAttribute } from './userAttributeRouterCreateUserAttribute';
 import { userAttributeRouterDeleteUserAttribute } from './userAttributeRouterDeleteUserAttribute';
 import { userAttributeRouterReadUserAttribute } from './userAttributeRouterReadUserAttribute';

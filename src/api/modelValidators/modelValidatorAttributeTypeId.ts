@@ -1,4 +1,4 @@
-import { AttributeTypeModel } from '@app/api/models';
+import { AttributeTypeModel } from '@app-ag/api/models';
 
 export const modelValidatorAttributeTypeId = async (doc, next) => {
   let attributeType;

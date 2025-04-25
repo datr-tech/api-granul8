@@ -1,5 +1,5 @@
+import { AttributeTypeModel } from '@app-ag/api/models';
 import { Types } from 'mongoose';
-import { AttributeTypeModel } from '@app/api/models';
 
 export const attributeTypeControllerDeleteAttributeType = async ({ attributeTypeId }) => {
   const res = await AttributeTypeModel.findOneAndUpdate(

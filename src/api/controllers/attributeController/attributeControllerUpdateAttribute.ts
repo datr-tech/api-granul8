@@ -1,4 +1,4 @@
-import { AttributeModel } from '@app/api/models';
+import { AttributeModel } from '@app-ag/api/models';
 
 export const attributeControllerUpdateAttribute = async ({ attributeId, payload }) => {
   const res = await AttributeModel.findOneAndUpdate(

@@ -1,6 +1,9 @@
-import { UserAttributeModel } from '@app/api/models';
+import { UserAttributeModel } from '@app-ag/api/models';
 
-export const userAttributeControllerUpdateUserAttribute = async ({ userAttributeId, payload }) => {
+export const userAttributeControllerUpdateUserAttribute = async ({
+  userAttributeId,
+  payload,
+}) => {
   const res = await UserAttributeModel.findOneAndUpdate(
     {
       _id: userAttributeId,

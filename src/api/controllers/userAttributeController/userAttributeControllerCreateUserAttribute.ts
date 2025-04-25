@@ -1,5 +1,5 @@
+import { UserAttributeModel } from '@app-ag/api/models';
 import { Types } from 'mongoose';
-import { UserAttributeModel } from '@app/api/models';
 
 export const userAttributeControllerCreateUserAttribute = async ({
   attributeId,

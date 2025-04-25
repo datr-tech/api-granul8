@@ -1,8 +1,14 @@
-import { Request, Response, Router } from 'express';
-import { checkExact, checkSchema, matchedData, Schema, validationResult } from 'express-validator';
-import { options } from '@datr.tech/leith-config-api-router-options';
+import { resourceAttributeController } from '@app-ag/api/controllers/resourceAttributeController';
 import { resourceAttributeValidationSchemaDeleteResourceAttribute } from '@datr.tech/cargo-router-validation-schemas-granul8';
-import { resourceAttributeController } from '@app/api/controllers/resourceAttributeController';
+import { options } from '@datr.tech/leith-config-api-router-options';
+import { Request, Response, Router } from 'express';
+import {
+  checkExact,
+  checkSchema,
+  matchedData,
+  Schema,
+  validationResult,
+} from 'express-validator';
 
 export const resourceAttributeRouterDeleteResourceAttribute = Router(options).get(
   '/',
@@ -13,7 +19,9 @@ export const resourceAttributeRouterDeleteResourceAttribute = Router(options).ge
 
     if (errors.isEmpty()) {
       const { resourceAttributeId } = matchedData(req);
-      const deleteResponse = await resourceAttributeController.deleteResourceAttribute({ resourceAttributeId });
+      const deleteResponse = await resourceAttributeController.deleteResourceAttribute({
+        resourceAttributeId,
+      });
 
       res.status(200).send({ deleteResponse });
     } else {

@@ -1,13 +1,19 @@
-import { model, Schema } from 'mongoose';
-import { userAttributeModelSchema, userAttributeModelSchemaOptions } from '@datr.tech/parcel-model-schemas-granul8';
 import {
-  modelValidatorAttributeId,
-  modelValidatorUserId,
   modelValidatorAdminStatusId,
   modelValidatorAdminUserId,
-} from '@app/api/modelValidators';
+  modelValidatorAttributeId,
+  modelValidatorUserId,
+} from '@app-ag/api/modelValidators';
+import {
+  userAttributeModelSchema,
+  userAttributeModelSchemaOptions,
+} from '@datr.tech/parcel-model-schemas-granul8';
+import { model, Schema } from 'mongoose';
 
-const userAttributeSchema = new Schema(userAttributeModelSchema, userAttributeModelSchemaOptions);
+const userAttributeSchema = new Schema(
+  userAttributeModelSchema,
+  userAttributeModelSchemaOptions,
+);
 
 userAttributeSchema.post('validate', modelValidatorAttributeId);
 userAttributeSchema.post('validate', modelValidatorUserId);

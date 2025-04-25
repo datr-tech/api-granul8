@@ -1,4 +1,4 @@
-import { AttributeModel } from '@app/api/models';
+import { AttributeModel } from '@app-ag/api/models';
 
 export const attributeControllerReadAttribute = async ({ attributeId }) => {
   const attribute = await AttributeModel.findById(attributeId);

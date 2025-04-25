@@ -1,8 +1,14 @@
-import { Request, Response, Router } from 'express';
-import { checkExact, checkSchema, matchedData, Schema, validationResult } from 'express-validator';
-import { options } from '@datr.tech/leith-config-api-router-options';
+import { resourceAttributeController } from '@app-ag/api/controllers/resourceAttributeController';
 import { resourceAttributeValidationSchemaUpdateResourceAttribute } from '@datr.tech/cargo-router-validation-schemas-granul8';
-import { resourceAttributeController } from '@app/api/controllers/resourceAttributeController';
+import { options } from '@datr.tech/leith-config-api-router-options';
+import { Request, Response, Router } from 'express';
+import {
+  checkExact,
+  checkSchema,
+  matchedData,
+  Schema,
+  validationResult,
+} from 'express-validator';
 
 export const resourceAttributeRouterUpdateResourceAttribute = Router(options).patch(
   '/',
@@ -13,7 +19,10 @@ export const resourceAttributeRouterUpdateResourceAttribute = Router(options).pa
 
     if (errors.isEmpty()) {
       const { resourceAttributeId, ...payload } = matchedData(req);
-      const updateStatus = await resourceAttributeController.updateResourceAttribute({ resourceAttributeId, payload });
+      const updateStatus = await resourceAttributeController.updateResourceAttribute({
+        resourceAttributeId,
+        payload,
+      });
 
       res.status(200).send({ updateStatus });
     } else {
