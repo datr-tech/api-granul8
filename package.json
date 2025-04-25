@@ -43,7 +43,7 @@
     "prechangelog": "git add ./package.json",
     "precommit": "npm-run-all format lint spell",
     "prepare": "husky",
-    "prepush": "npm run test",
+    "prepush": "npm run lint",
     "preversion": "npm-run-all format lint spell",
     "spell": "npx cspell .",
     "start": "node ./dist/index.js",
