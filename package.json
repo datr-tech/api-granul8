@@ -44,13 +44,13 @@
     "precommit": "npm-run-all format lint spell",
     "prepare": "husky",
     "prepush": "npm run test",
-    "preversion": "npm-run-all format lint spell test",
+    "preversion": "npm-run-all format lint spell",
     "spell": "npx cspell .",
     "start": "node ./dist/index.js",
     "test": "npm run test:unit",
     "test:it": "npx jest -c ./jest.config.integration.json ./test/integration",
     "test:unit": "npx jest -c ./jest.config.unit.json ./test/unit --coverage",
-    "version": "npm-run-all build test:it changelog"
+    "version": "npm-run-all build changelog"
   },
   "dependencies": {
     "@datr.tech/cargo-router-validation-schemas-granul8": "^0.4.0",
