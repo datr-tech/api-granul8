@@ -1,0 +1,6 @@
+import { IUserAttributeControllerReadUserAttributeOutputError } from './IUserAttributeControllerReadUserAttributeOutputError';
+import { IUserAttributeControllerReadUserAttributeOutputSuccess } from './IUserAttributeControllerReadUserAttributeOutputSuccess';
+
+export type IUserAttributeControllerReadUserAttributeOutput =
+  | IUserAttributeControllerReadUserAttributeOutputSuccess
+  | IUserAttributeControllerReadUserAttributeOutputError;

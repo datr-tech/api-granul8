@@ -1,0 +1,6 @@
+import { IResourceAttributeControllerUpdateResourceAttributeOutputError } from './IResourceAttributeControllerUpdateResourceAttributeOutputError';
+import { IResourceAttributeControllerUpdateResourceAttributeOutputSuccess } from './IResourceAttributeControllerUpdateResourceAttributeOutputSuccess';
+
+export type IResourceAttributeControllerUpdateResourceAttributeOutput =
+  | IResourceAttributeControllerUpdateResourceAttributeOutputSuccess
+  | IResourceAttributeControllerUpdateResourceAttributeOutputError;

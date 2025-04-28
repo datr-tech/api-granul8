@@ -1,0 +1,6 @@
+import { IResourceAttributeControllerReadResourceAttributeOutputError } from './IResourceAttributeControllerReadResourceAttributeOutputError';
+import { IResourceAttributeControllerReadResourceAttributeOutputSuccess } from './IResourceAttributeControllerReadResourceAttributeOutputSuccess';
+
+export type IResourceAttributeControllerReadResourceAttributeOutput =
+  | IResourceAttributeControllerReadResourceAttributeOutputSuccess
+  | IResourceAttributeControllerReadResourceAttributeOutputError;

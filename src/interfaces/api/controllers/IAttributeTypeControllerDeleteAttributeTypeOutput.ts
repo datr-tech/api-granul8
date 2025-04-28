@@ -1,0 +1,6 @@
+import { IAttributeTypeControllerDeleteAttributeTypeOutputError } from './IAttributeTypeControllerDeleteAttributeTypeOutputError';
+import { IAttributeTypeControllerDeleteAttributeTypeOutputSuccess } from './IAttributeTypeControllerDeleteAttributeTypeOutputSuccess';
+
+export type IAttributeTypeControllerDeleteAttributeTypeOutput =
+  | IAttributeTypeControllerDeleteAttributeTypeOutputSuccess
+  | IAttributeTypeControllerDeleteAttributeTypeOutputError;

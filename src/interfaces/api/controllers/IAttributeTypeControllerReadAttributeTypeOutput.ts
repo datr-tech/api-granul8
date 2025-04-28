@@ -1,0 +1,6 @@
+import { IAttributeTypeControllerReadAttributeTypeOutputError } from './IAttributeTypeControllerReadAttributeTypeOutputError';
+import { IAttributeTypeControllerReadAttributeTypeOutputSuccess } from './IAttributeTypeControllerReadAttributeTypeOutputSuccess';
+
+export type IAttributeTypeControllerReadAttributeTypeOutput =
+  | IAttributeTypeControllerReadAttributeTypeOutputSuccess
+  | IAttributeTypeControllerReadAttributeTypeOutputError;

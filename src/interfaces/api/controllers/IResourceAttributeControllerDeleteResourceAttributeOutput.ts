@@ -1,0 +1,6 @@
+import { IResourceAttributeControllerDeleteResourceAttributeOutputError } from './IResourceAttributeControllerDeleteResourceAttributeOutputError';
+import { IResourceAttributeControllerDeleteResourceAttributeOutputSuccess } from './IResourceAttributeControllerDeleteResourceAttributeOutputSuccess';
+
+export type IResourceAttributeControllerDeleteResourceAttributeOutput =
+  | IResourceAttributeControllerDeleteResourceAttributeOutputSuccess
+  | IResourceAttributeControllerDeleteResourceAttributeOutputError;

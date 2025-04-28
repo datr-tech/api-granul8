@@ -1,0 +1,6 @@
+import { IAttributeTypeControllerUpdateAttributeTypeOutputError } from './IAttributeTypeControllerUpdateAttributeTypeOutputError';
+import { IAttributeTypeControllerUpdateAttributeTypeOutputSuccess } from './IAttributeTypeControllerUpdateAttributeTypeOutputSuccess';
+
+export type IAttributeTypeControllerUpdateAttributeTypeOutput =
+  | IAttributeTypeControllerUpdateAttributeTypeOutputSuccess
+  | IAttributeTypeControllerUpdateAttributeTypeOutputError;

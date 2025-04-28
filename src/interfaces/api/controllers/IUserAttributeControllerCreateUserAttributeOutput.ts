@@ -1,0 +1,6 @@
+import { IUserAttributeControllerCreateUserAttributeOutputError } from './IUserAttributeControllerCreateUserAttributeOutputError';
+import { IUserAttributeControllerCreateUserAttributeOutputSuccess } from './IUserAttributeControllerCreateUserAttributeOutputSuccess';
+
+export type IUserAttributeControllerCreateUserAttributeOutput =
+  | IUserAttributeControllerCreateUserAttributeOutputSuccess
+  | IUserAttributeControllerCreateUserAttributeOutputError;

@@ -1,0 +1,6 @@
+import { IUserAttributeControllerDeleteUserAttributeOutputError } from './IUserAttributeControllerDeleteUserAttributeOutputError';
+import { IUserAttributeControllerDeleteUserAttributeOutputSuccess } from './IUserAttributeControllerDeleteUserAttributeOutputSuccess';
+
+export type IUserAttributeControllerDeleteUserAttributeOutput =
+  | IUserAttributeControllerDeleteUserAttributeOutputSuccess
+  | IUserAttributeControllerDeleteUserAttributeOutputError;
