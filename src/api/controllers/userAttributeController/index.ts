@@ -1,1 +1,0 @@
-export { userAttributeController } from './userAttributeController';
