@@ -1,0 +1,1 @@
+export { resourceAttributeController } from './resourceAttributeController';

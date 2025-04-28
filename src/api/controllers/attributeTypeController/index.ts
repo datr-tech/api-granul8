@@ -1,0 +1,1 @@
+export { attributeTypeController } from './attributeTypeController';
