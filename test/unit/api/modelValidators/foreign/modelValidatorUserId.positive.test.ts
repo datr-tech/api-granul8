@@ -3,17 +3,23 @@ const personaServiceHasUserMock = jest.fn().mockReturnValue(true);
 jest.mock('@datr.tech/leith-common-services', () => ({
   __esModule: true,
   personaService: {
-    hasUser: personaServiceHasUserMock,
-  },
+		hasUser: personaServiceHasUserMock
+  }
 }));
 
-import { modelValidatorUserId } from '@app-ag/api/modelValidators/foreign';
+import { modelValidatorUserId } from "@app-ag/api/modelValidators/foreign";
 import { Types } from 'mongoose';
 
-describe('modelValidatorUserId', () => {
-  describe('positive', () => {
-    test('should not throw an error when the underlying personaService (mocked) returns true', async () => {
-      /*
+/**
+ * modelValidatorUserId.positive
+ *
+ * A positive test for modelValidatorUserId where personaService.hasUser
+ * (from '@datr.tech/leith-common-services') is mocked above, using personaServiceHasUserMock.
+ */
+describe( "modelValidatorUserId", () => {
+	describe("positive", () => {
+		test("should not throw an error when the underlying personaService (mocked) returns true", async () => {
+			/*
        * Arrange
        */
       const idMock = new Types.ObjectId();
@@ -23,16 +29,14 @@ describe('modelValidatorUserId', () => {
       /*
        * Act
        */
-      await modelValidatorUserId(docMock, nextMock);
+			await modelValidatorUserId(docMock, nextMock);
 
-      /*
+			/*
        * Assert
        */
-      expect(personaServiceHasUserMock).toHaveBeenCalledTimes(1);
-      expect(personaServiceHasUserMock).toHaveBeenCalledWith(
-        expect.objectContaining({ userId: idMock }),
-      );
-      expect(nextMock).toHaveBeenCalledTimes(1);
-    });
-  });
-});
+		  expect( personaServiceHasUserMock ).toHaveBeenCalledTimes(1);
+      expect( personaServiceHasUserMock ).toHaveBeenCalledWith(expect.objectContaining({ userId: idMock }));
+			expect(nextMock).toHaveBeenCalledTimes(1);
+		});
+	});
+}); 
