@@ -13,8 +13,10 @@ import { Types } from 'mongoose';
 /**
  * modelValidatorResourceId.negative
  *
- * A positive test for modelValidatorResourceId where entityService.hasResource
+ * A negative test for modelValidatorResourceId where entityService.hasResource
  * (from '@datr.tech/leith-common-services') is mocked above, using entityServiceHasResourceMock.
+ *
+ * @author Datr.Tech Admin <admin@datr.tech>
  */
 describe( "modelValidatorResourceId", () => {
 	describe("negative", () => {

@@ -13,8 +13,10 @@ import { Types } from 'mongoose';
 /**
  * modelValidatorUserId.negative
  *
- * A positive test for modelValidatorUserId where personaService.hasUser
+ * A negative test for modelValidatorUserId where personaService.hasUser
  * (from '@datr.tech/leith-common-services') is mocked above, using personaServiceHasUserMock.
+ *
+ * @author Datr.Tech Admin <admin@datr.tech>
  */
 describe( "modelValidatorUserId", () => {
 	describe("negative", () => {

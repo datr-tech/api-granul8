@@ -15,6 +15,8 @@ import { Types } from 'mongoose';
  *
  * A positive test for modelValidatorUserId where personaService.hasUser
  * (from '@datr.tech/leith-common-services') is mocked above, using personaServiceHasUserMock.
+ *
+ * @author Datr.Tech Admin <admin@datr.tech>
  */
 describe( "modelValidatorUserId", () => {
 	describe("positive", () => {

@@ -15,6 +15,8 @@ import { Types } from 'mongoose';
  *
  * A positive test for modelValidatorResourceId where entityService.hasResource
  * (from '@datr.tech/leith-common-services') is mocked above, using entityServiceHasResourceMock.
+ *
+ * @author Datr.Tech Admin <admin@datr.tech>
  */
 describe( "modelValidatorResourceId", () => {
 	describe("positive", () => {
