@@ -1,9 +1,11 @@
 import {
   modelValidatorAdminStatusId,
   modelValidatorAdminUserId,
-  modelValidatorAttributeId,
   modelValidatorUserId,
-} from '@app-ag/api/modelValidators';
+} from '@app-ag/api/modelValidators/foreign';
+
+import { modelValidatorAttributeId } from '@app-ag/api/modelValidators/local';
+
 import {
   userAttributeModelSchema,
   userAttributeModelSchemaOptions,

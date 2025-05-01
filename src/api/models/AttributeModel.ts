@@ -1,12 +1,15 @@
 import {
   modelValidatorAdminStatusId,
   modelValidatorAdminUserId,
-  modelValidatorAttributeTypeId,
-} from '@app-ag/api/modelValidators';
+} from '@app-ag/api/modelValidators/foreign';
+
+import { modelValidatorAttributeTypeId } from '@app-ag/api/modelValidators/local';
+
 import {
   attributeModelSchema,
   attributeModelSchemaOptions,
 } from '@datr.tech/parcel-model-schemas-granul8';
+
 import { model, Schema } from 'mongoose';
 
 const attributeSchema = new Schema(attributeModelSchema, attributeModelSchemaOptions);

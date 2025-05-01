@@ -33,7 +33,7 @@ export const userAttributeControllerDeleteUserAttribute: IUserAttributeControlle
        * found model by updating the value of the model's
        * 'adminStatusId' field.
        */
-      const userAttributeModel = await UserAttributeModel.findOneAndUpdate(
+      await UserAttributeModel.findOneAndUpdate(
         {
           _id: userAttributeId,
         },

@@ -33,7 +33,7 @@ export const attributeTypeControllerDeleteAttributeType: IAttributeTypeControlle
        * found model by updating the value of the model's
        * 'adminStatusId' field.
        */
-      const attributeTypeModel = await AttributeTypeModel.findOneAndUpdate(
+      await AttributeTypeModel.findOneAndUpdate(
         {
           _id: attributeTypeId,
         },
