@@ -4,5 +4,6 @@ export interface IUserAttributeControllerReadUserAttributeOutputSuccess {
   error: false;
   payload: {
     userAttributeModel: IUserAttributeModel;
+    responseStatusCode: number;
   };
 }

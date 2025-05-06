@@ -4,5 +4,6 @@ export interface IAttributeTypeControllerReadAttributeTypeOutputSuccess {
   error: false;
   payload: {
     attributeTypeModel: IAttributeTypeModel;
+    responseStatusCode: number;
   };
 }

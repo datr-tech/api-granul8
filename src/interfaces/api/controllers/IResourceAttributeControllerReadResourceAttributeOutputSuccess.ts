@@ -4,5 +4,6 @@ export interface IResourceAttributeControllerReadResourceAttributeOutputSuccess 
   error: false;
   payload: {
     resourceAttributeModel: IResourceAttributeModel;
+    responseStatusCode: number;
   };
 }

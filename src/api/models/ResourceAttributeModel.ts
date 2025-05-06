@@ -4,7 +4,7 @@ import {
   modelValidatorResourceId,
 } from '@app-ag/api/modelValidators/foreign';
 
-import { modelValidatorAttributeId } from '@app-ag/api/modelValidators/local';
+import { modelValidatorAttributeId } from '@app-ag/api/modelValidators/local/modelValidatorAttributeId';
 
 import {
   resourceAttributeModelSchema,

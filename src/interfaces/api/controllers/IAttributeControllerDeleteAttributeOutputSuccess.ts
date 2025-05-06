@@ -4,5 +4,6 @@ export interface IAttributeControllerDeleteAttributeOutputSuccess {
   error: false;
   payload: {
     attributeId: Types.ObjectId;
+    responseStatusCode: number;
   };
 }

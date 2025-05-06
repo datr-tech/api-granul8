@@ -3,7 +3,7 @@ import {
   modelValidatorAdminUserId,
 } from '@app-ag/api/modelValidators/foreign';
 
-import { modelValidatorAttributeTypeId } from '@app-ag/api/modelValidators/local';
+import { modelValidatorAttributeTypeId } from '@app-ag/api/modelValidators/local/modelValidatorAttributeTypeId';
 
 import {
   attributeModelSchema,

@@ -4,5 +4,6 @@ export interface IUserAttributeControllerUpdateUserAttributeOutputSuccess {
   error: false;
   payload: {
     userAttributeId: Types.ObjectId;
+    responseStatusCode: number;
   };
 }

@@ -4,5 +4,6 @@ export interface IResourceAttributeControllerUpdateResourceAttributeOutputSucces
   error: false;
   payload: {
     resourceAttributeId: Types.ObjectId;
+    responseStatusCode: number;
   };
 }
